@@ -1,0 +1,35 @@
+public class IncrementDecrement { 
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+
+        int pre_a, post_a, pre_b, post_b;
+
+        System.out.println("Initial value of a: " + a);
+        System.out.println("Initial value of b: " + b);
+
+        // Prefix increment (++a): increases first, then uses the value
+        pre_a = ++a;
+        System.out.println("\nPrefix increment (++a):");
+        System.out.println("After prefix increment, a = " + a);
+        System.out.println("Value stored in pre_a = " + pre_a);
+
+        // Postfix increment (a++): uses value first, then increases
+        post_a = a++;
+        System.out.println("\nPostfix increment (a++):");
+        System.out.println("After postfix increment, a = " + a);
+        System.out.println("Value stored in post_a = " + post_a);
+
+        // Prefix decrement (--b): decreases first, then uses the value
+        pre_b = --b;
+        System.out.println("\nPrefix decrement (--b):");
+        System.out.println("After prefix decrement, b = " + b);
+        System.out.println("Value stored in pre_b = " + pre_b);
+
+        // Postfix decrement (b--): uses value first, then decreases
+        post_b = b--;
+        System.out.println("\nPostfix decrement (b--):");
+        System.out.println("After postfix decrement, b = " + b);
+        System.out.println("Value stored in post_b = " + post_b);
+    }
+}
