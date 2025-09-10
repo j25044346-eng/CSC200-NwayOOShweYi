@@ -1,0 +1,37 @@
+public class OutputSpecialCharacters {
+    public static void main(String[] args) {
+		
+        /*****
+        Updated code to demonstrate all Java special characters.
+        Replaced XYZ with correct escape sequences and println with print.
+        *****/
+
+        System.out.print("Demonstrating Special Characters in Java\n");
+        System.out.print("---------------------------------------\n\n");
+
+        // New line (\n)
+        System.out.print("New line example:\nHello\nWorld\n\n");
+
+        // Tab (\t)
+        System.out.print("Tab example:\tJava\tProgramming\n\n");
+
+        // Backslash (\\)
+        System.out.print("Backslash: \\\n\n");
+
+        // Double quote (\")
+        System.out.print("Double quote: \"Hello\"\n\n");
+
+        // Single quote (\')
+        System.out.print("Single quote: \'A\'\n\n");
+
+        // Carriage return (\r)
+        System.out.print("Carriage return example:\n");
+        System.out.print("Original Line\rOverwritten line\n\n");
+
+        // Backspace (\b)
+        System.out.print("Backspace example: ABC\bD\n\n");
+
+        // Form feed (\f)
+        System.out.print("Form feed example: First page\fSecond page\n");
+    }
+}
