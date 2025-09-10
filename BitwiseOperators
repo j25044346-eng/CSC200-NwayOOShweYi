@@ -1,0 +1,40 @@
+public class BitwiseOperators { 
+    public static void main(String[] args) {
+        int a = 36;   // 36 in binary = 00100100
+        int b = 75;   // 75 in binary = 01001011
+
+        System.out.println("a = " + a + " (Binary: " + String.format("%8s", Integer.toBinaryString(a)).replace(' ', '0') + ")");
+        System.out.println("b = " + b + " (Binary: " + String.format("%8s", Integer.toBinaryString(b)).replace(' ', '0') + ")");
+        System.out.println("-----------------------------------------");
+
+        // Bitwise AND
+        System.out.println("a & b = " + (a & b) + " (AND)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a & b)).replace(' ', '0'));
+
+        // Bitwise OR
+        System.out.println("\na | b = " + (a | b) + " (OR)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a | b)).replace(' ', '0'));
+
+        // Bitwise XOR
+        System.out.println("\na ^ b = " + (a ^ b) + " (XOR)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a ^ b)).replace(' ', '0'));
+
+        // Bitwise NOT
+        System.out.println("\n~a = " + (~a) + " (NOT of a)");   
+        System.out.println("Binary Result: " + String.format("%32s", Integer.toBinaryString(~a)).replace(' ', '0'));
+        System.out.println("~b = " + (~b) + " (NOT of b)");   
+        System.out.println("Binary Result: " + String.format("%32s", Integer.toBinaryString(~b)).replace(' ', '0'));
+
+        // Left shift
+        System.out.println("\na << 1 = " + (a << 1) + " (Left Shift a by 1)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a << 1)).replace(' ', '0'));
+
+        // Right shift
+        System.out.println("\na >> 1 = " + (a >> 1) + " (Right Shift a by 1)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a >> 1)).replace(' ', '0'));
+
+        // Unsigned right shift
+        System.out.println("\na >>> 1 = " + (a >>> 1) + " (Unsigned Right Shift a by 1)"); 
+        System.out.println("Binary Result: " + String.format("%8s", Integer.toBinaryString(a >>> 1)).replace(' ', '0'));
+    }
+}
