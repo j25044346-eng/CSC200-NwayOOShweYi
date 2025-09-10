@@ -1,0 +1,36 @@
+public class OperatorLevels { 
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+
+        System.out.println("Initial values: a = " + a + ", b = " + b);
+        System.out.println("-------------------------------------------");
+
+        // 1. Unary Operators
+        System.out.println("Unary Operators:");
+        System.out.println(" -a = " + (-a) + " (Unary minus)");
+        System.out.println(" ++a = " + (++a) + " (Prefix increment)");
+
+        // Postfix decrement on b
+        System.out.println(" b-- = " + (b--) + " (Postfix decrement, value before decrement)");
+        System.out.println(" b after b-- = " + b); 
+        System.out.println();
+
+        // Reset values of a and b to the original
+        a = 10;
+        b = 5;
+
+        // 2. Binary Operators
+        System.out.println("Binary Operators:");
+        System.out.println(" a + b = " + (a + b) + " (Addition)");
+        System.out.println(" a - b = " + (a - b) + " (Subtraction)");
+        System.out.println(" a * b = " + (a * b) + " (Multiplication)");
+        System.out.println(" a / b = " + (a / b) + " (Division)");
+        System.out.println(" a % b = " + (a % b) + " (Modulus / Remainder)");
+        System.out.println();
+
+        // 3. Ternary Operator
+        System.out.println("Ternary Operator:");
+        String result = (a % 2 == 0) ? "even" : "odd";
+        System.out.println(" a = " + a + " is " + result);
+    }
+}
